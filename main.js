@@ -1,6 +1,6 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap';  //不寫前面它會自動去node_modules裡面找尋
-
+import "./node_modules/bootstrap/dist/js/bootstrap"
 // 跑馬燈動畫
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto", // 自動計算每次滑動可容納個內容
