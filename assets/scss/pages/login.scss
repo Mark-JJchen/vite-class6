@@ -1,0 +1,7 @@
+.content {
+    height: calc(100vh - (111px + 94px));
+    padding-top: 60px;
+    @include media-breakpoint-down(md) {
+        padding-top: 24px;
+    }
+}

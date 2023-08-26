@@ -1,0 +1,122 @@
+.banner {
+  background-image: url(/assets/images/title-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 518px;
+  @include media-breakpoint-down(md) {
+    height: 350px;
+    h1 {
+      width: 200px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.catelogs a {
+  display: block;
+  &:hover {
+    color: #c96464; //* 覆蓋圖片顏色 https://codepen.io/sosuke/pen/Pjoqqp
+    img {
+      filter: invert(48%) sepia(7%) saturate(3297%) hue-rotate(313deg) brightness(99%) contrast(99%);
+    }
+  }
+}
+
+.catelogs.col {
+  width: 196px;
+  height: 300px;
+}
+
+.custom-card-header {
+  @extend .border-bottom;
+  @extend .border-2;
+  @extend .border-custom1;
+  @extend .fs-48;
+  @extend .ps-0;
+  @extend .fw-bold;
+  @extend .bg-transparent;
+}
+
+.hover-bg-yellow {
+  color: #030303;
+  &:hover {
+    background-color: #fbff22;
+    border-radius: 50px;
+  }
+}
+
+.online-cate {
+  border: 1px black solid;
+  border-left: 3px black solid;
+  @extend .px-24;
+  @extend .py-1;
+}
+
+.swiper {
+  background-color: #000;
+  &-wrapper {
+    transition-timing-function: linear;
+    /*.swiper-wrapper 的部分會使用 transition-timing-function: linear; 能創造出跑馬燈均速的效果。*/
+  }
+  &-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: #fbff22;
+    background: #000;
+  }
+}
+
+.item {
+  @extend .border;
+  @extend .border-2;
+  @extend .border-dark;
+  @extend .p-16;
+  @extend .pb-48;
+  @extend .position-relative;
+  img {
+    object-fit: cover;
+    height: 274px;
+  }
+
+  .h2-transform {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+}
+
+.activity {
+  @extend .mb-40;
+  &:nth-child(2n) {
+    transform: rotate(2deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(-2deg);
+  }
+}
+
+.btn-hover {
+  &:hover {
+    color: #c96464;
+    i {
+      filter: invert(48%) sepia(7%) saturate(3297%) hue-rotate(313deg) brightness(99%) contrast(99%);
+    }
+  }
+}
+
+.subscribe-btn,
+.ptt-btn {
+  &:hover {
+    color: #fbff22;
+  }
+}
+
+.text-3small {
+  @include media-breakpoint-down(lg) {
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,21 @@
+// 載入BS相關
+@import "bootstrap/scss/functions"; // 載入 function
+@import "./utils/variables"; // 自定義
+@import "bootstrap/scss/bootstrap"; // 載入剩下 bootstarp
+@import "./utils/utility"; //加上原先語法未支援斷點的像是 font-size、border、position
+// api 載入前要先載入utility
+@import "bootstrap/scss/utilities/api";
+
+// @import "./base/reset";  助教說可以不用再加reset
+
+//網頁、SCSS
+@import "./base/base.scss";
+@import "./pages/index.scss";
+@import "./pages/login.scss";
+@import "./layout/header";
+@import "./layout/footer";
+
+//其他外部連結
+@import "./icofont/icofont.css"; //載入icofont
+@import "./icofont/icofont.min.css"; //載入icofont
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Yeseva+One&display=swap"); //載入文字

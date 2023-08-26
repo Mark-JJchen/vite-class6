@@ -1,0 +1,38 @@
+nav {
+  background-color: #f3f1e5;
+  .form-control {
+    &::placeholder {
+      padding-left: 24px;
+    }
+  }
+}
+
+.nav-item span {
+  &:hover {
+    color: #fbff22;
+  }
+}
+.navbar-toggler {
+  &:hover {
+    background-color: #fbff22;
+  }
+}
+
+.nav-form {
+  width: 335px;
+  height: 55px;
+  @include media-breakpoint-down(md) {
+    width: calc((246px / 399px) * 100%);
+  }
+}
+.collapsing {
+  // transition: 0s !important;
+  height: 0px;
+}
+.btn-collapse {
+  top: 100%;
+  background-color: #f3f1e5;
+  width: 100%;
+  opacity: 0.9;
+  backdrop-filter: blur(20px);
+}
